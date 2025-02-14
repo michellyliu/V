@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To: Victoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Hi, Victoria ❤️</h1>
+        
+        <button id="firstClick">Click me</button>
+
+        <!-- First hidden layer: Kiss & Hug Buttons + Second Click Me -->
+        <div id="hiddenButtons" class="hidden">
+            <h3>Happy Valentine's Day! </h3>
+            <h6>Enjoy this simple website lol. </h6>
+            <h6 style="text-align: left;">
+                
+                As i'm sitting here writing this, I've been thinking about how I appreciate that you 
+                somehow always find a way to be interested, excited, or happy about things related to me.
+                Even when our conversations repeat or our routines become predictable, thank
+                you for reminding me that they’re not boring to you. 
+        
+                Doing the little mundane things in life together brings me comfort, and finding meaning in the ordinary is something I hope to never take for granted with u.
+                I love the beautiful life that we are building so far, and I'm excited
+                for whatever else we will end up experiencing! 
+                
+                Excited to spend many more Valentines with u!! 
+                Little ole me is so lucky to have you as my gf. 
+                <br></br>
+                <br>Love u lots,</br>
+                <p>Michelle </p>
+
+                <p>*we can go to the library tmr lol. sry, i was really trying to make something on this website work (you'll see next)*</p>
+                
+            </h6>
+               
+          
+            <div class="buttons">
+                <button id="kiss">A Kith</button>
+                <button id="hug">A Hug</button>
+            </div>
+            <div id="animation-container"></div>
+            <button id="secondClick">Click me again!</button>
+        </div>
+
+        <!-- Second hidden layer: Wordle Game -->
+        <div id="hiddenWordle" class="hidden">
+            <div class="container">
+                <h1>💖 V's Wordle 💖</h1>
+                <div id="wordle" class="wordle-grid"></div>
+                <button id="submit">Submit Guess</button>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("firstClick").addEventListener("click", function() {
+            document.getElementById("hiddenButtons").classList.remove("hidden");
+        });
+
+        document.getElementById("secondClick").addEventListener("click", function() {
+            document.getElementById("hiddenWordle").classList.remove("hidden");
+        });
+    </script>
+</body>
+</html>
